@@ -1,0 +1,4 @@
+.mozc/*
+!.mozc/config1.db
+
+.byobu/.ssh-agent
