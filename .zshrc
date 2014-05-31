@@ -87,7 +87,6 @@ setopt noautoremoveslash
 setopt complete_aliases
 # エイリアス
 alias h='history -E -32'
-RPROMPT='%/'
 
 # Git
 autoload -Uz add-zsh-hook
