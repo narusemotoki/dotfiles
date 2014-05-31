@@ -117,8 +117,10 @@ function _update_vcs_info_msg() {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 add-zsh-hook precmd _update_vcs_info_msg
-RPROMPT="%1(v|%F{green}%1v%f|) [%d]"
-
+if [ ! "$EMACS" ];then
+    # multi-termと相性が悪い
+    RPROMPT="%1(v|%F{green}%1v%f|) [%d]"
+fi
 
 #--------------
 # コマンド実行後に右プロンプトを消す
@@ -271,5 +273,6 @@ fi
 alias python_dev_http_server="python -m SimpleHTTPServer 8080"
 alias e=emacsclient
 alias sudo='sudo env PATH=$PATH'
+export GOPATH=$HOME/workspace/go
 
 export LC_CTYPE=ja_JP.UTF-8
