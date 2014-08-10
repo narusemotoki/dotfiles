@@ -273,5 +273,6 @@ alias python_dev_http_server="python -m SimpleHTTPServer 8080"
 alias e=emacsclient
 alias sudo='sudo env PATH=$PATH'
 export GOPATH=$HOME/workspace/go
+export PATH=$PATH:$GOPATH/bin
 
 export LC_CTYPE=ja_JP.UTF-8
