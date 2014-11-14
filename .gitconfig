@@ -61,3 +61,5 @@
 
     # push関連
     prepush = "! gitprepush.sh"
+
+    now = "! git commit -m \"`date '+%Y/%m/%d %H:%M:%S'`\""
