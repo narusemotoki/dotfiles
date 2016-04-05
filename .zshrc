@@ -233,9 +233,6 @@ else #Linux以外(Macを想定)Darwinと比較するべきか
 fi
 
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-export ANDROID_SDK_HOME=~/lib/android-sdks
-export ANDROID_HOME=~/lib/android-sdks
-export APPENGINE_JAVA_SDK=~/app/appengine-java-sdk
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 export _JAVA_OPTIONS="-Dfile.encoding=UTF-8"
 VTE_CJK_WIDTH=1
