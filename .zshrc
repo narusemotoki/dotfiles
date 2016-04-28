@@ -116,10 +116,7 @@ function _update_vcs_info_msg() {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 add-zsh-hook precmd _update_vcs_info_msg
-if [ ! "$EMACS" ];then
-    # multi-termと相性が悪い
-    RPROMPT="%1(v|%F{green}%1v%f|) [%d]"
-fi
+RPROMPT="%1(v|%F{green}%1v%f|) [%d]"
 
 #--------------
 # コマンド実行後に右プロンプトを消す
